@@ -44,13 +44,13 @@ export function Footer() {
               World-class equipment, expert trainers, and a motivating atmosphere.
             </p>
             <a
-              href="https://www.instagram.com/assure_fitnessclub"
+              href="https://www.instagram.com/assurefitness_club"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Instagram className="w-5 h-5" />
-              @assure_fitnessclub
+              @assurefitness_club
             </a>
           </div>
 

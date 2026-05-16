@@ -154,7 +154,7 @@ export function GallerySection() {
           className="mt-12 text-center"
         >
           <a
-            href="https://www.instagram.com/assure_fitnessclub"
+            href="https://www.instagram.com/assurefitness_club"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-white font-semibold hover:opacity-90 transition-opacity"
@@ -163,7 +163,7 @@ export function GallerySection() {
             Follow Us on Instagram
           </a>
           <p className="mt-4 text-muted-foreground text-sm">
-            @assure_fitnessclub - Daily workout videos, transformations & more!
+            @assurefitness_club - Daily workout videos, transformations & more!
           </p>
         </motion.div>
       </div>

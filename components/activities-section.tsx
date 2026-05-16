@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Calendar, Clock, Users } from "lucide-react"
+import { Calendar, Clock } from "lucide-react"
 
 const activities = [
   {
@@ -30,13 +30,14 @@ const activities = [
   },
 ]
 
-const workoutSchedule = [
-  { time: "5:30 AM", activity: "Early Bird Training", type: "General" },
-  { time: "7:00 AM", activity: "Morning Cardio", type: "Cardio" },
-  { time: "9:00 AM", activity: "Strength Training", type: "Weights" },
-  { time: "4:00 PM", activity: "Evening Workout", type: "Mixed" },
-  { time: "6:00 PM", activity: "Peak Hour Training", type: "All" },
-  { time: "8:00 PM", activity: "Night Fitness", type: "Weights" },
+const weeklyHours = [
+  { day: "Monday", open: "5:30 AM", close: "11:00 PM", isOpen: true },
+  { day: "Tuesday", open: "5:30 AM", close: "11:00 PM", isOpen: true },
+  { day: "Wednesday", open: "5:30 AM", close: "11:00 PM", isOpen: true },
+  { day: "Thursday", open: "5:30 AM", close: "11:00 PM", isOpen: true },
+  { day: "Friday", open: "5:30 AM", close: "11:00 PM", isOpen: true },
+  { day: "Saturday", open: "5:30 AM", close: "11:00 PM", isOpen: true },
+  { day: "Sunday", open: "7:00 AM", close: "11:00 AM", isOpen: true },
 ]
 
 export function ActivitiesSection() {
@@ -98,7 +99,7 @@ export function ActivitiesSection() {
           ))}
         </div>
 
-        {/* Schedule Table */}
+        {/* Opening Hours */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -110,37 +111,33 @@ export function ActivitiesSection() {
               <Clock className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-foreground">Daily Schedule</h3>
-              <p className="text-sm text-muted-foreground">Monday to Saturday: 5:30 AM - 11:00 PM</p>
+              <h3 className="text-xl font-bold text-foreground">Opening Hours</h3>
+              <p className="text-sm text-muted-foreground">We are open 7 days a week</p>
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {workoutSchedule.map((slot, index) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {weeklyHours.map((schedule, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="flex items-center gap-4 p-4 rounded-xl bg-background border border-border hover:border-primary/50 transition-colors"
+                className={`p-4 rounded-xl border transition-colors ${
+                  schedule.day === "Sunday"
+                    ? "bg-accent/10 border-accent/30"
+                    : "bg-background border-border hover:border-primary/50"
+                }`}
               >
-                <div className="text-center">
-                  <div className="text-lg font-bold text-primary">{slot.time}</div>
+                <div className="font-semibold text-foreground mb-2">{schedule.day}</div>
+                <div className="flex items-center gap-2 text-sm">
+                  <span className="text-primary font-medium">{schedule.open}</span>
+                  <span className="text-muted-foreground">-</span>
+                  <span className="text-primary font-medium">{schedule.close}</span>
                 </div>
-                <div className="flex-1">
-                  <div className="font-medium text-foreground">{slot.activity}</div>
-                  <div className="text-xs text-muted-foreground">{slot.type}</div>
-                </div>
-                <Users className="w-5 h-5 text-muted-foreground" />
               </motion.div>
             ))}
-          </div>
-
-          <div className="mt-6 p-4 rounded-xl bg-accent/10 border border-accent/20">
-            <p className="text-center text-sm text-muted-foreground">
-              <span className="text-accent font-medium">Sunday Hours:</span> 7:00 AM - 11:00 AM
-            </p>
           </div>
         </motion.div>
       </div>

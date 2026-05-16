@@ -30,8 +30,8 @@ const contactInfo = [
   {
     icon: Instagram,
     title: "Instagram",
-    content: "@assure_fitnessclub",
-    link: "https://www.instagram.com/assure_fitnessclub",
+    content: "@assurefitness_club",
+    link: "https://www.instagram.com/assurefitness_club",
   },
 ]
 
@@ -109,7 +109,7 @@ export function ContactSection() {
             {/* Map */}
             <div className="rounded-2xl overflow-hidden border border-border h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8493714694884!2d72.5714!3d23.0258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzMyLjkiTiA3MsKwMzQnMTcuMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5!2d72.6264!3d23.0828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e871f1d7d7ae7%3A0x2c5f2e2a3c9f8e9d!2s601%20Shree%20Balaji%20Road%2C%20Ahmedabad%2C%20Gujarat%20382330!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
