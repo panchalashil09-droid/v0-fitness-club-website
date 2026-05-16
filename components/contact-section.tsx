@@ -12,8 +12,8 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    content: "601 Shree Balaji Road, Ahmedabad, Gujarat 382330, India",
-    link: "https://maps.google.com/?q=601+Shree+Balaji+Road+Ahmedabad+Gujarat+382330",
+    content: "J-601 White Business Hub, Nr Hanspura Gam, Degam Road, Naroda, Ahmedabad 382330",
+    link: "https://maps.google.com/?q=Assure+Fitness+Club+LLP+Naroda+Ahmedabad",
   },
   {
     icon: Phone,
@@ -109,7 +109,7 @@ export function ContactSection() {
             {/* Map */}
             <div className="rounded-2xl overflow-hidden border border-border h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5!2d72.6264!3d23.0828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e871f1d7d7ae7%3A0x2c5f2e2a3c9f8e9d!2s601%20Shree%20Balaji%20Road%2C%20Ahmedabad%2C%20Gujarat%20382330!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps?q=Assure+Fitness+Club+LLP,+Naroda,+Ahmedabad,+Gujarat+382330&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
