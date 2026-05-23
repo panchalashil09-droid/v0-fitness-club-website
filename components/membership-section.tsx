@@ -15,42 +15,10 @@ const plans = [
     features: [
       "Full gym access",
       "All equipment usage",
-      "Locker facility",
       "AC environment",
       "Basic guidance",
-    ],
-  },
-  {
-    name: "Quarterly",
-    duration: "3 Months",
-    price: "₹4,000",
-    period: "/quarter",
-    popular: false,
-    features: [
-      "Full gym access",
-      "All equipment usage",
-      "Locker facility",
-      "AC environment",
-      "Personal guidance",
       "Free yoga sessions",
-      "Diet consultation",
-    ],
-  },
-  {
-    name: "Half-Yearly",
-    duration: "6 Months",
-    price: "₹7,000",
-    period: "/6 months",
-    popular: false,
-    features: [
-      "Full gym access",
-      "All equipment usage",
-      "Locker facility",
-      "AC environment",
-      "Personal guidance",
-      "Free yoga sessions",
-      "Diet consultation",
-      "Zumba sessions",
+      "Free zumba sessions",
     ],
   },
   {
@@ -62,14 +30,12 @@ const plans = [
     features: [
       "Full gym access",
       "All equipment usage",
-      "Locker facility",
       "AC environment",
-      "Personal guidance",
+      "Basic guidance",
       "Free yoga sessions",
+      "Free zumba sessions",
+      "Personal gym bag",
       "Diet consultation",
-      "Zumba sessions",
-      "Priority support",
-      "Guest passes",
     ],
   },
 ]
@@ -103,7 +69,7 @@ export function MembershipSection() {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
           {plans.map((plan, index) => (
             <motion.div
               key={index}
