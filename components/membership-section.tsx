@@ -25,7 +25,7 @@ const plans = [
     duration: "3 Months",
     price: "₹4,000",
     period: "/quarter",
-    popular: true,
+    popular: false,
     features: [
       "Full gym access",
       "All equipment usage",
@@ -56,9 +56,9 @@ const plans = [
   {
     name: "Annual",
     duration: "12 Months",
-    price: "₹12,000",
+    price: "₹6,000",
     period: "/year",
-    popular: false,
+    popular: true,
     features: [
       "Full gym access",
       "All equipment usage",
