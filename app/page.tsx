@@ -5,7 +5,7 @@ import { FacilitiesSection } from "@/components/facilities-section"
 import { ActivitiesSection } from "@/components/activities-section"
 import { MembershipSection } from "@/components/membership-section"
 import { GallerySection } from "@/components/gallery-section"
-import { InstagramFeed } from "@/components/instagram-feed"
+import { InstagramGallery } from "@/components/instagram-gallery"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { BMICalculator } from "@/components/bmi-calculator"
 import { FAQSection } from "@/components/faq-section"
@@ -24,7 +24,7 @@ export default function Home() {
       <ActivitiesSection />
       <MembershipSection />
       <GallerySection />
-      <InstagramFeed />
+      <InstagramGallery />
       <TestimonialsSection />
       <BMICalculator />
       <FAQSection />
