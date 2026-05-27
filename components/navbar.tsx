@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Dumbbell, Phone } from "lucide-react"
+import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
@@ -40,9 +41,13 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="#home" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <Dumbbell className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <Image
+              src="/logo.webp"
+              alt="Assure Fitness Club"
+              width={40}
+              height={40}
+              className="w-10 h-10"
+            />
             <div>
               <span className="text-xl font-bold text-foreground">ASSURE</span>
               <span className="text-xl font-bold text-primary ml-1">FITNESS</span>
