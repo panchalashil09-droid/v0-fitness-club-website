@@ -7,55 +7,55 @@ import { Play, X, Instagram } from "lucide-react"
 const galleryItems = [
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop",
-    title: "Premium Equipment",
+    src: "https://content.jdmagicbox.com/comp/ahmedabad/t9/079pxx79.xx79.230911200039.a3t9/catalogue/shree-red-bull-gym-naroda-ahmedabad-gyms-7zfg4s9jul-pc-323809545-sco-11kdy98zdga.jpg",
+    title: "Main Gym Floor",
     category: "Equipment",
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop",
-    title: "Cardio Zone",
-    category: "Cardio",
-  },
-  {
-    type: "image",
-    src: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop",
-    title: "Weight Training",
+    src: "https://content.jdmagicbox.com/comp/ahmedabad/t9/079pxx79.xx79.230911200039.a3t9/catalogue/shree-red-bull-gym-naroda-ahmedabad-gyms-fxb37n3yx-pc-323809546-sco-11kdy98zdga.jpg",
+    title: "Weight Training Area",
     category: "Weights",
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=800&h=600&fit=crop",
-    title: "Treadmill Area",
+    src: "https://content.jdmagicbox.com/comp/ahmedabad/t9/079pxx79.xx79.230911200039.a3t9/catalogue/shree-red-bull-gym-naroda-ahmedabad-gyms-jbfxp1rre7-pc-323809547-sco-11kdy98zdga.jpg",
+    title: "Dumbbells & Free Weights",
+    category: "Weights",
+  },
+  {
+    type: "image",
+    src: "https://content.jdmagicbox.com/comp/ahmedabad/t9/079pxx79.xx79.230911200039.a3t9/catalogue/shree-red-bull-gym-naroda-ahmedabad-gyms-hx8s5jmyzr-pc-323809548-sco-11kdy98zdga.jpg",
+    title: "Cardio Equipment",
     category: "Cardio",
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&h=600&fit=crop",
+    src: "https://content.jdmagicbox.com/comp/ahmedabad/t9/079pxx79.xx79.230911200039.a3t9/catalogue/shree-red-bull-gym-naroda-ahmedabad-gyms-zn42jfbf4f-pc-323809549-sco-11kdy98zdga.jpg",
+    title: "Treadmill Zone",
+    category: "Cardio",
+  },
+  {
+    type: "image",
+    src: "https://content.jdmagicbox.com/comp/ahmedabad/t9/079pxx79.xx79.230911200039.a3t9/catalogue/shree-red-bull-gym-naroda-ahmedabad-gyms-k7n3jvp2m5-pc-323809550-sco-11kdy98zdga.jpg",
     title: "Personal Training",
     category: "Training",
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=800&h=600&fit=crop",
-    title: "Boxing Section",
-    category: "Boxing",
+    src: "https://content.jdmagicbox.com/comp/ahmedabad/t9/079pxx79.xx79.230911200039.a3t9/catalogue/shree-red-bull-gym-naroda-ahmedabad-gyms-w9p8qkr3l2-pc-323809551-sco-11kdy98zdga.jpg",
+    title: "Premium Facilities",
+    category: "Equipment",
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?w=800&h=600&fit=crop",
-    title: "Strength Zone",
-    category: "Weights",
-  },
-  {
-    type: "image",
-    src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop",
-    title: "Yoga Studio",
-    category: "Yoga",
+    src: "https://content.jdmagicbox.com/comp/ahmedabad/t9/079pxx79.xx79.230911200039.a3t9/catalogue/shree-red-bull-gym-naroda-ahmedabad-gyms-d5x7yt9j1k-pc-323809552-sco-11kdy98zdga.jpg",
+    title: "Modern Gym Environment",
+    category: "Equipment",
   },
 ]
 
-const categories = ["All", "Equipment", "Cardio", "Weights", "Training", "Boxing", "Yoga"]
+const categories = ["All", "Equipment", "Weights", "Cardio", "Training"]
 
 export function GallerySection() {
   const [selectedCategory, setSelectedCategory] = useState("All")
