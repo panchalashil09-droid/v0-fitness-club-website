@@ -7,55 +7,43 @@ import { Play, X, Instagram } from "lucide-react"
 const galleryItems = [
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop",
-    title: "Premium Equipment",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cardiosection.jpg-jAyF0dVmDj9UpP0EXNlbiiRj2GVPfv.webp",
+    title: "Welcome to Assure Fitness",
+    category: "Facilities",
+  },
+  {
+    type: "image",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openwork.jpg-YeLmzi5Xfz0AUbyjZK1MwlXtvAtI4F.webp",
+    title: "Premium Cycling Zone",
+    category: "Cardio",
+  },
+  {
+    type: "image",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tredmills.jpg-L6yQbcYIkhlQBSf0phqEOTNR5BwKFA.webp",
+    title: "Modern Treadmill Area",
+    category: "Cardio",
+  },
+  {
+    type: "image",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/machines.jpg-dymg3DVuPdEhoMyAH6Jx7fpDtdh3wN.webp",
+    title: "Complete Machine Equipment",
     category: "Equipment",
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop",
-    title: "Cardio Zone",
-    category: "Cardio",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unnamed.jpg-wQBz8gA50cb1sGFlNNm29jIhpOjIky.webp",
+    title: "Professional Nautilus Machines",
+    category: "Equipment",
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop",
-    title: "Weight Training",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/deadlift.jpg-CJkqsLHfFJ0bLFVEVsNkGsNIMBwPJn.webp",
+    title: "Free Weights & Strength Zone",
     category: "Weights",
-  },
-  {
-    type: "image",
-    src: "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=800&h=600&fit=crop",
-    title: "Treadmill Area",
-    category: "Cardio",
-  },
-  {
-    type: "image",
-    src: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&h=600&fit=crop",
-    title: "Personal Training",
-    category: "Training",
-  },
-  {
-    type: "image",
-    src: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=800&h=600&fit=crop",
-    title: "Boxing Section",
-    category: "Boxing",
-  },
-  {
-    type: "image",
-    src: "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?w=800&h=600&fit=crop",
-    title: "Strength Zone",
-    category: "Weights",
-  },
-  {
-    type: "image",
-    src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop",
-    title: "Yoga Studio",
-    category: "Yoga",
   },
 ]
 
-const categories = ["All", "Equipment", "Cardio", "Weights", "Training", "Boxing", "Yoga"]
+const categories = ["All", "Facilities", "Cardio", "Equipment", "Weights"]
 
 export function GallerySection() {
   const [selectedCategory, setSelectedCategory] = useState("All")
