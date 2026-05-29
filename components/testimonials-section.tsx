@@ -7,37 +7,37 @@ import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react"
 const testimonials = [
   {
     name: "Rahul Sharma",
-    role: "Lost 15kg in 6 months",
+    role: "Member",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
-    content: "Assure Fitness completely transformed my life. The trainers are incredibly knowledgeable and the equipment is world-class. I lost 15kg and gained so much confidence!",
+    content: "Excellent gym with top-quality equipment and professional trainers. The atmosphere is motivating and the staff is always helpful. Best experience in Ahmedabad!",
     rating: 5,
   },
   {
     name: "Priya Patel",
-    role: "Fitness Enthusiast",
+    role: "Regular Member",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face",
-    content: "The yoga and zumba sessions are amazing! The atmosphere is so motivating and everyone is super supportive. Best gym in Ahmedabad without a doubt!",
+    content: "Amazing gym with fantastic trainers and state-of-the-art equipment. The yoga and zumba classes are wonderful. Highly recommend to everyone!",
     rating: 5,
   },
   {
     name: "Amit Desai",
-    role: "Gained 10kg muscle",
+    role: "Fitness Enthusiast",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
-    content: "The premium equipment and spacious workout area make training a pleasure. The loud music and AC environment keep me pumped throughout my workout!",
+    content: "Great gym with excellent facilities, clean environment, and supportive staff. The personal training sessions are very effective. Definitely worth the membership!",
     rating: 5,
   },
   {
     name: "Neha Singh",
     role: "Working Professional",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face",
-    content: "As a busy professional, I love the flexible hours. The gym is clean, hygienic, and the staff is always helpful. Highly recommend to everyone!",
+    content: "Perfect gym for busy professionals. Flexible hours, clean facilities, and knowledgeable trainers. The AC environment and equipment quality are outstanding!",
     rating: 5,
   },
   {
     name: "Vikram Mehta",
-    role: "Boxing Enthusiast",
+    role: "Member",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
-    content: "The boxing section is fantastic! Quality kick bags and ample space. Combined with the intense music, it's the perfect place to release stress.",
+    content: "Assure Fitness Club is the best gym in Naroda. The equipment is well-maintained, trainers are professional, and the monthly fee is very reasonable!",
     rating: 5,
   },
 ]
@@ -70,6 +70,27 @@ export function TestimonialsSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Google Reviews Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex items-center justify-center gap-4 mb-12 p-6 rounded-lg bg-background border border-border"
+        >
+          <div>
+            <div className="flex items-center gap-1 mb-2">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground">Based on 298 Google Reviews</p>
+          </div>
+          <div className="text-right">
+            <p className="text-3xl font-bold text-foreground">4.8</p>
+            <p className="text-sm text-muted-foreground">out of 5</p>
+          </div>
+        </motion.div>
+
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
