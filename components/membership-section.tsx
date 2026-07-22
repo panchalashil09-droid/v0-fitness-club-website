@@ -46,9 +46,9 @@ export function MembershipSection() {
   return (
     <section id="membership" className="py-24 bg-card relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+        <div className="absolute top-20 right-10 w-40 h-40 sm:w-72 sm:h-72 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-40 h-40 sm:w-72 sm:h-72 bg-accent/5 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
